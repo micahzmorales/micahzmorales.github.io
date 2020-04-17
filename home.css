@@ -1,0 +1,57 @@
+body{
+  background: #8381a8;
+}
+.main{
+  display: flex;
+}
+.cross{
+  padding: 2px 2px 2px 2px;
+}
+.header{
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Just Me Again Down Here', cursive ,serif;
+  color:rgb(0,0,0);
+  font-weight: 100;
+  letter-spacing: 0.5px;
+
+}
+.menu{
+  text-align: center;
+  padding: 8px 8px 8px 8px;
+  left: 50%;
+}
+.menu li{
+  display: inline-block;
+  padding: 6px 0 6px 0;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 13px;
+  font-family: 'Hammersmith One', sans-serif, Arial;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+li a{
+  text-decoration: none;
+  color: black;
+}
+.menulink::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width .4s;
+}
+.menulink:hover::after{
+  width: 100%;
+  transition: width .1s;
+}
+.cross img:hover{
+  display: inline-block;
+  filter: contrast(60%);
+  filter: brightness(80%);
+  transition: 0.5s;
+}
